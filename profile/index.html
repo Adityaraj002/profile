@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    </style>
+    
+</head>
+<body>
+  <div class="flex justify-center items-center  h-screen">
+    <div class="card bg-orange-400 p-10 rounded-lg w-[25%]">
+      <div class="card-header text-center p-5">
+        <img src="./Public/Aditya.jpg" alt="photo" class="rounded-full m-auto w-[43%]">
+        <h1 class="text-3xl font-bold">Aditya raj</h1>
+        <p class="p-2">Frontend Developer</p>
+      </div>
+
+      <div class="card-link">
+      <div id="gitOpen" class="card-item flex justify-between bg-gray-400 py-4 px-5 rounded-full mb-4 cursor-pointer hover:scale-105 duration-500" >
+        <p>Github</p>
+        <div class="icon bg-green-400 w-9 text-center rounded-full">
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+      <div id="TwitterOpen" class="card-item flex justify-between bg-gray-400 py-4 px-5 rounded-full mb-4 cursor-pointer hover:scale-105 duration-500">
+        <p class="name">Twitter</p>
+        <div class="icon bg-blue-400 w-9 text-center rounded-full">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      <div id="InstagramOpen" class="card-item flex justify-between bg-gray-400 py-4 px-5 rounded-full mb-4 cursor-pointer hover:scale-105 duration-500">
+        <p class="name">Instagram</p>
+        <div class="icon bg-pink-400 w-9 text-center rounded-full">
+          <!-- <i class="fa-brands fa-facebook-f"></i> -->
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+      <div id="EmailOpen" class="card-item bg-gray-400 flex justify-between py-4 px-5 rounded-full mb-4 cursor-pointer hover:scale-105 duration-500">
+        <p class="name">Email</p>
+        <div class="icon bg-red-400 w-9 text-center rounded-full">
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
